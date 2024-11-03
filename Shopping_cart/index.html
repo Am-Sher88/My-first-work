@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nákupní seznam elektroniky</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Nákupní seznam elektroniky</h1>
+    <form id="itemForm">
+        <select id="itemName">
+            <option value="">Vyberte položku</option>
+        </select>
+        <input type="number" id="itemCount" placeholder="Počet kusů" min="1" max="50" required>
+        <button type="submit">Přidat do seznamu</button>
+        <select id="sortOptions">
+            <option value="name">Seřadit podle názvu</option>
+            <option value="count">Seřadit podle počtu</option>
+            <option value="price">Seřadit podle ceny</option>
+        </select>
+    </form>
+    <h2>Seznam položek</h2>
+    <ul id="itemList"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
